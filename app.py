@@ -41,8 +41,8 @@ with col1:
     st.metric(label="Điểm trung bình lớp", value=f"{dtb_lop:.2f}")
     st.metric(label="Số sinh viên đạt", value=so_sv_dat)
 with col2:
-    st.metric(label="Điểm cao nhất", value=f"{sv_cao_nhat['Họ and tên']} ({sv_cao_nhat['Tong_ket']}đ)")
-    st.metric(label="Điểm thấp nhất", value=f"{sv_thap_nhat['Họ and tên']} ({sv_thap_nhat['Tong_ket']}đ)")
+    st.metric(label="Điểm cao nhất", value=f"{sv_cao_nhat['Họ và tên']} ({sv_cao_nhat['Tong_ket']}đ)")
+    st.metric(label="Điểm thấp nhất", value=f"{sv_thap_nhat['Họ và tên']} ({sv_thap_nhat['Tong_ket']}đ)")
 
 # 5. Danh sách xổ xuống (Selectbox) chọn sinh viên
 st.subheader("Tra cứu thông tin sinh viên")
