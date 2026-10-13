@@ -67,4 +67,4 @@ st.pyplot(fig)
 
 # 7. Thông tin người tạo (Cuối trang, chữ nhỏ)
 st.markdown("---")
-st.markdown("<p style='text-align: center; color: gray; font-size: 12px;'>Họ tên: [Tên của bạn] | MSSV: [Mã số sinh viên]</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; color: gray; font-size: 12px;'>Họ tên: [Nguyễn Xuân Kiên] | MSSV: [Mã số sinh viên: 001208036092]</p>", unsafe_allow_html=True)
