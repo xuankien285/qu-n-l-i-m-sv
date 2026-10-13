@@ -46,8 +46,8 @@ with col2:
 
 # 5. Danh sách xổ xuống (Selectbox) chọn sinh viên
 st.subheader("Tra cứu thông tin sinh viên")
-selected_student = st.selectbox("Chọn tên sinh viên:", df['Họ and tên'])
-student_info = df[df['Họ and tên'] == selected_student].iloc[0]
+selected_student = st.selectbox("Chọn tên sinh viên:", df['Họ và tên'])
+student_info = df[df['Họ và tên'] == selected_student].iloc[0]
 
 c1, c2, c3, c4, c5 = st.columns(5)
 c1.metric("Chuyên cần", student_info['Chuyên cần'])
@@ -59,7 +59,7 @@ c5.metric("Xếp loại", student_info['Xep_loai'])
 # 6. Hiển thị biểu đồ cột
 st.subheader("Biểu đồ điểm tổng kết")
 fig, ax = plt.subplots(figsize=(10, 4))
-ax.bar(df['Họ and tên'], df['Tong_ket'], color='skyblue', edgecolor='black')
+ax.bar(df['Họ và tên'], df['Tong_ket'], color='skyblue', edgecolor='black')
 ax.set_ylim(0, 10)
 for i, diem in enumerate(df['Tong_ket']):
     ax.text(i, diem + 0.1, str(diem), ha='center', fontsize=9)
